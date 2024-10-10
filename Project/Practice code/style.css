@@ -1,0 +1,38 @@
+h1 { color: #03396c;}  
+h2 { color: #03396c;
+    font-size: 2em;
+}  
+
+body {
+    background-color: #b3cde0;
+    color: #000000;
+    text-align: center;
+    /*background-image: url('IMG_6135.JPG');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;*/
+}
+nav { 
+    font-size: 1.5em;
+    text-align: center;
+}
+nav a {color: #03396c;}
+nav a:hover {background-color: #bccee8;}
+
+a {color: #03396c;}
+
+.box {border:3px solid #959595;
+padding: 30px;
+margin-top: 25px;
+margin-bottom: 25px;
+margin-left: 75px;
+margin-right: 75px;
+}
+img {
+    width: 250px;   
+    height: auto;  
+}
+
+.evenrow {background-color:rgb(222, 233, 255);}
+table, th, td {border: 1px solid black;}
+caption {font-size: 1.5em;}
