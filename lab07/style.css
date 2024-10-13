@@ -5,6 +5,8 @@ body {
 nav { 
     background-color: #6497b1;
     font-size: 2em;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 nav a {color: #03396c;}
 nav a:hover {background-color: #bccee8;}
