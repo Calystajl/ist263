@@ -1,0 +1,21 @@
+body {
+    background-color: #b3cde0;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {color: #03396c;}
+a:visited {color: #000000;}
+nav { 
+    background-color: #6497b1;
+    font-size: 2em;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {color: #03396c;}
+nav a:hover {background-color: #bccee8;}
+
+h1 { color: #03396c;}
+.quote {float: right;}
+
+.evenrow {background-color:rgb(222, 233, 255);}
+table, th, td {border: 1px solid black;}
