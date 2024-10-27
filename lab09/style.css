@@ -32,7 +32,6 @@ table, th, td {border: 1px solid black;}
 
 .column {
     flex: 1; 
-    padding: 20px;
 }
 
 form {
