@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        <title>Contact Me</title>
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script>
+        function showNav () {
+            document.getElementById("navlinks").style.display = "block";
+            document.getElementById("hamicon").style.display = "none";
+            document.getElementById("close").style.display = "block";
+        }
+        function hideNav () {
+            document.getElementById("navlinks").style.display = "none";
+            document.getElementById("hamicon").style.display = "block";
+            document.getElementById("close").style.display = "none";
+        }
+    </script>
+<body>
+    <header>
+        <h1>CALYSTA LEE PHOTOGRAPHY</h1>
+        <div class="boxit">
+            <img id="hamicon" onclick="showNav();" src="http://peopel-su.github.io/ist263/images/hamburger.png" alt="hamburger icon">
+        </div>
+        <nav id="navlinks">
+            <p id="close" onclick="hideNav();">✖</p>
+            <a href="home.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<h1>Connect With Me</h1>
+<div class="logos">
+    <a href="mailto:clee119@syr.edu">
+        <img src="project_images/email.png" alt="Email Icon" class="emaillogo">
+    </a>
+
+    <a href="https://www.instagram.com/notmynikon/">
+        <img src="project_images/instagram.png" alt="Instagram Logo" class="instalogo">
+    </a>
+
+<a href="https://www.linkedin.com/in/calystalee">
+    <img src="../images/linkedin_sized.png" alt="My LinkedIn Profile" class="linkedinlogo">
+</a>
+</div>
+
+<h2>Send Me a Message:</h2>
+    <form action="https://formspree.io/f/manwgyjb" method="POST">
+        <label for="fname">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" name="email"><br>
+    
+        <label for="service">Booking Request:</label><br>
+            <select id="service" name="service">
+                <option value="" disabled selected>Select</option>
+                <option value="portrait">Senior Portraits</option>
+                <option value="family">Family Portraits</option>
+                <option value="event">Event Coverage</option>
+            </select><br>
+    
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="40" placeholder="Add text here:"></textarea><br>
+        
+        <input type="submit" value="Submit">
+    
+    </form><br>
+
+    <h2 class="reviews">Client Reviews</h2>
+    <div class="reviews-container">
+        <p>"Beyond thrilled with how the photos turned out"</p>
+        <p>"I felt so comfortable and supported throughout the shoot, we had fun! And I absolutely love my portraits"</p>
+        <p>"I'm so grateful to have a photo that perfectly captures me doing what I love most"</p>
+        <p>"New profile picture for sure"</p>
+    </div>
+
+<footer>
+    <hr>
+    &copy; 2024
+</footer>
+
+</body>
+
+</html>
+    
+                
+                
+                

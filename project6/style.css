@@ -1,0 +1,118 @@
+h1 { color: #03396c;}  
+h2 { color: #03396c;
+    font-size: 2em;
+} 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #03396c;
+}
+
+body {
+    background-color: #d7ecff;
+    color: #000000;
+    text-align: center;
+}
+nav { 
+    font-size: 1.5em;    
+}
+nav a {color: #03396c;}
+nav a:hover {background-color: #bccee8;}
+
+
+.logos {
+    display: flex;
+    gap: 40px;
+    justify-content: center; 
+}
+.emaillogo, .instalogo, .linkedinlogo {
+    height: 20px;  
+}
+
+form input, form select, form textarea {
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #03396c;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reviews {
+    padding-top: 5%;
+    border-top: 1px solid #03396c;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into new rows */
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Adds spacing between items */
+    margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid #03396c;
+    }
+    nav {
+        font-size: 1.2em;
+    }
+    .logos {
+        flex-wrap: wrap;
+        gap: 20px;
+        height: 10px; 
+    }
+
+    form input, form select, form textarea {
+        width: 90%; 
+    }
+
+    .reviews-container p {
+        margin-bottom: 10px; 
+    }
+}
+
+
+#hamicon {
+    width: 40px;
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    #hamicon, #close {
+        display: block; 
+    }
+    
+    #navlinks {
+        display: none; 
+    }
+    
+    a {
+        display: block;
+    }
+    
+    .boxit {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #hamicon {
+        margin-left: auto; 
+    }
+}
