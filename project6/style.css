@@ -20,7 +20,7 @@ nav {
     font-size: 1.5em;    
 }
 nav a {
-    gap: 40px;
+    gap: 30px;
     color: #03396c;
 }
 nav a:hover {background-color: #bccee8;}
