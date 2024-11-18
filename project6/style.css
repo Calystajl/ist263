@@ -19,7 +19,10 @@ body {
 nav { 
     font-size: 1.5em;    
 }
-nav a {color: #03396c;}
+nav a {
+    margin-right: 30px;
+    color: #03396c;
+}
 nav a:hover {background-color: #bccee8;}
 
 
@@ -70,6 +73,9 @@ form label {
     nav {
         font-size: 1.2em;
     }
+    nav a {
+        margin-right: 0%;
+    }
     .logos {
         flex-wrap: wrap;
         gap: 20px;
@@ -100,7 +106,7 @@ form label {
         display: block; 
     }
     
-    #navlinks {
+    #nav {
         display: none; 
     }
     

@@ -2,30 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        <title>Contact Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
         <link rel="stylesheet" href="style.css">
-    </head>
-    <script>
+        <script>
         function showNav () {
-            document.getElementById("navlinks").style.display = "block";
-            document.getElementById("hamicon").style.display = "none";
-            document.getElementById("close").style.display = "block";
-        }
-        function hideNav () {
-            document.getElementById("navlinks").style.display = "none";
-            document.getElementById("hamicon").style.display = "block";
-            document.getElementById("close").style.display = "none";
-        }
-    </script>
+                document.getElementById("nav").style.display = "block";
+                document.getElementById("hamicon").style.display = "none";
+                document.getElementById("close").style.display = "block";
+            }
+            function hideNav () {
+                document.getElementById("nav").style.display = "none";
+                document.getElementById("hamicon").style.display = "block";
+                document.getElementById("close").style.display = "none";
+            }
+     </script>
+    </head>
 <body>
     <header>
         <h1>CALYSTA LEE PHOTOGRAPHY</h1>
         <div class="boxit">
             <img id="hamicon" onclick="showNav();" src="http://peopel-su.github.io/ist263/images/hamburger.png" alt="hamburger icon">
         </div>
-        <nav id="navlinks">
+        <nav id="nav">
             <p id="close" onclick="hideNav();">✖</p>
             <a href="home.html">Home</a>
             <a href="portfolio.html">Portfolio</a>
