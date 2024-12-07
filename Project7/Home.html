@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calysta Lee Photography</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script>
+        function showNav () {
+                document.getElementById("nav").style.display = "block";
+                document.getElementById("hamicon").style.display = "none";
+                document.getElementById("close").style.display = "block";
+            }
+            function hideNav () {
+                document.getElementById("nav").style.display = "none";
+                document.getElementById("hamicon").style.display = "block";
+                document.getElementById("close").style.display = "none";
+            }
+     </script>
+    </head>
+<body class="bodyfont">
+    <header>
+        <h1 class="headerfont">CALYSTA LEE PHOTOGRAPHY</h1>
+        <div class="boxit">
+            <img id="hamicon" onclick="showNav();" src="http://peopel-su.github.io/ist263/images/hamburger.png" alt="hamburger icon">
+        </div>
+        <nav id="nav">
+            <p id="close" onclick="hideNav();">✖</p>
+            <a class="navclass" href="home.html">Home</a>
+            <a class="navclass" href="portfolio.html">Portfolio</a>
+            <a class="navclass" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+
+<h2 class="headerfont">Welcome</h2>
+<div class="intro-box">
+<p class="intro">
+    My name is Calysta Lee, and I am a student photographer based in Washington, D.C. and Syracuse, New York. I am currently continuing my studies of visual communications at The S.I. Newhouse School of Public Communications at Syracuse University in hopes of taking my storytelling to the next level. I have 5 years of photography experience, ranging from sports coverage, portrait sessions, and journalistic documentary. I have recently began a focus of cinematography in my studies, where I am learning how to effectively tell stories through video and multimedia. 
+</p>
+<img class="me"src="project_images/me.jpg" alt="Calysta Lee image"  width="300">
+</div>
+
+<footer>
+    <hr>
+    &copy; Calysta Lee Photography 2024
+</footer>
+
+</body>
+
+</html>

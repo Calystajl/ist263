@@ -4,20 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
-<body>
-    <h1>CALYSTA LEE PHOTOGRAPHY</h1>
-        <nav>
-            <a href="home.html">Home</a> <span>|</span>
-            <a href="portfolio.html">Portfolio</a> <span>|</span>
-            <a href="contact.html">Contact</a>  
-        </nav>
+    <body class="bodyfont">
+        <header>
+            <h1 class="headerfont">CALYSTA LEE PHOTOGRAPHY</h1>
+            <div class="boxit">
+                <img id="hamicon" onclick="showNav();" src="http://peopel-su.github.io/ist263/images/hamburger.png" alt="hamburger icon">
+            </div>
+            <nav id="nav">
+                <p id="close" onclick="hideNav();">✖</p>
+                <a class="navclass" href="home.html">Home</a>
+                <a class="navclass" href="portfolio.html">Portfolio</a>
+                <a class="navclass" href="contact.html">Contact</a>
+            </nav>
+        </header>
     
-    <h2>My Portfolio</h2>
+    <h2 class="headerfont">My Portfolio</h2>
     <p>Here you will find a selection of my work. Please enjoy.</p>
 
-    <h3>Portraits</h3>
+    <h3 class="headerfont">Portraits</h3>
     <p>Photos I have taken to mark the academic milestones of graduating students, celebrate gathered family members, support professionals, and capture the joys of friendship.</p>
     <img src="project_images/Portraits/CaraMcAreePortraits_108.JPEG"
     width="300"
@@ -72,7 +83,7 @@
     alt="Student Senior Portrait"
     >
 
-    <h3>Athletics</h3>
+    <h3 class="headerfont">Athletics</h3>
     <p>Highlighting athleticism and competition from my time at St. Stephen’s and St. Agnes High School and Syracuse University: Frozen moments of intense game play, artistry and dance, and scenes from the sidelines.</p>
     <img src="project_images/Sports/IMG_7701.JPG"
     width="600"
@@ -128,7 +139,7 @@
     >
 
 
-    <h3>Fashion</h3>
+    <h3 class="headerfont">Fashion</h3>
     <p>Photos taken for the Instagram account @SUFits, which highlights the best dressed people at Syracuse University, fashion features for The Daily Orange, and scenes from a show by the Fashion and Design Society at Syracuse University.</p>
     <img src="project_images/Fashion/DO_JamiPortraits_24.jpg"
     width="300"
@@ -176,7 +187,7 @@
     >
 
 
-    <h3>Documentary</h3>
+    <h3 class="headerfont">Documentary</h3>
     <p>Life through my eyes. Events I've witnessed, the people I meet, and scenes I see.</p> 
     <img src="project_images/documentary/IMG_6135.JPG"
     width="600"
@@ -230,7 +241,7 @@
 
 <footer>
     <hr>
-    &copy; 2024
+    &copy; Calysta Lee Photography 2024
 </footer>
 
 </body>

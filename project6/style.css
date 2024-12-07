@@ -7,22 +7,40 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    border-bottom: 1px solid #03396c;
 }
 
+.bodyfont {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+.headerfont {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 body {
-    font-family: Verdana;
-    background-color: #d7ecff;
-    color: #000000;
     text-align: center;
+
 }
 nav { 
     font-size: 1.5em;
 }
-nav a {
-    gap: 40px;
-    color: #03396c;
+.navclass {
+    padding-left: 10px;
+    padding-right: 10px;
 }
+nav a {
+    color: #03396c;
+    text-decoration: none;
+
+}
+#invisible {
+    display: none;
+}
+
 nav a:hover {background-color: #bccee8;}
 @media (max-width: 800px) {
     header {
@@ -126,6 +144,7 @@ caption {font-size: 1.5em;}
 .intro {
     float: none;
     text-align: left;
+    line-height: 1.5;
 }
 
 .intro-box { 

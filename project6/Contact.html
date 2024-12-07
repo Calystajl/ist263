@@ -4,7 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script>
         function showNav () {
                 document.getElementById("nav").style.display = "block";
@@ -18,20 +22,20 @@
             }
      </script>
     </head>
-<body>
+<body class="bodyfont">
     <header>
-        <h1>CALYSTA LEE PHOTOGRAPHY</h1>
+        <h1 class="headerfont">CALYSTA LEE PHOTOGRAPHY</h1>
         <div class="boxit">
             <img id="hamicon" onclick="showNav();" src="http://peopel-su.github.io/ist263/images/hamburger.png" alt="hamburger icon">
         </div>
         <nav id="nav">
             <p id="close" onclick="hideNav();">✖</p>
-            <a href="home.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+            <a class="navclass" href="home.html">Home</a>
+            <a class="navclass" href="portfolio.html">Portfolio</a>
+            <a class="navclass" href="contact.html">Contact</a>
         </nav>
     </header>
-<h1>Connect With Me</h1>
+<h1 class="headerfont">Connect With Me</h1>
 <div class="logos">
     <a href="mailto:clee119@syr.edu">
         <img src="project_images/email.png" alt="Email Icon" class="emaillogo">
@@ -46,7 +50,7 @@
 </a>
 </div>
 
-<h2>Send Me a Message:</h2>
+<h2 class="headerfont">Send Me a Message:</h2>
     <form action="https://formspree.io/f/manwgyjb" method="POST">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br>
@@ -69,7 +73,7 @@
     
     </form><br>
 
-    <h2 class="reviews">Client Reviews</h2>
+    <h2 class="headerfont" class="reviews">Client Reviews</h2>
     <div class="reviews-container">
         <p>"Beyond thrilled with how the photos turned out"</p>
         <p>"I felt so comfortable and supported throughout the shoot, we had fun! And I absolutely love my portraits"</p>
@@ -79,7 +83,7 @@
 
 <footer>
     <hr>
-    &copy; 2024
+    &copy; Calysta Lee Photography 2024
 </footer>
 
 </body>
