@@ -197,6 +197,12 @@ caption {font-size: 1.5em;}
 }
 
 .portfolio-text {
-    display: flex;
-    margin: 50px;
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
