@@ -3,85 +3,109 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
+        <title>Contact</title>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script>
+        function showNav () {
+                document.getElementById("nav").style.display = "block";
+                document.getElementById("hamicon").style.display = "none";
+                document.getElementById("close").style.display = "block";
+            }
+            function hideNav () {
+                document.getElementById("nav").style.display = "none";
+                document.getElementById("hamicon").style.display = "block";
+                document.getElementById("close").style.display = "none";
+            }
+     </script>
     </head>
-
-    <body class="bodyfont">
-        <header>
-            <div>
-                <a href="Home.html">
-                <img class="mainlogo" src="mainlogo.png" alt="Calysta Lee Photography Logo Image" width ="150" >
-                </a>
-            </div>
-            <h1 id="invisible" class="headerfont">CALYSTA LEE PHOTOGRAPHY</h1>
-            <div class="boxit">
-                <img id="hamicon" onclick="showNav();" src="http://peopel-su.github.io/ist263/images/hamburger.png" alt="hamburger icon">
-            </div>
-            <nav id="nav">
-                <p id="close" onclick="hideNav();">✖</p>
-                <a class="navclass" href="Home.html">Home</a>
-                <a class="navclass" href="Portfolio.html">Portfolio</a>
-                <a class="navclass" href="Contact.html">Contact</a>
-            </nav>
-        </header>
+<body class="bodyfont">
+    <header>
+        <div>
+            <a href="Home.html">
+            <img class="mainlogo" src="mainlogo.png" alt="Calysta Lee Photography Logo Image" width ="150" >
+            </a>
+        </div>
+        <div class="boxit">
+            <img id="hamicon" onclick="showNav();" src="hamburger.png" alt="hamburger icon">
+        </div>
+        <nav id="nav">
+            <p id="close" onclick="hideNav();">✖</p>
+            <a class="navclass" href="Home.html">Home</a>
+            <a class="navclass" href="Portfolio.html">Portfolio</a>
+            <a class="navclass" href="Contact.html">Contact</a>
+        </nav>
+    </header>
     
-    
-    <h2 class="headerfont">Documentary</h2>
+    <h1 class="headerfont">Documentary</h1>
     <p>Life through my eyes. Events I've witnessed, the people I meet, and scenes I see.</p> 
+
+    <div class="portoflio-images">
+
     <img src="project_images/documentary/IMG_6135.JPG"
-    width="600"
+    height="400"
     alt="Seattle Skyline Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/IMG_6207.JPG"
-    width="600"
+    height="400"
     alt="Seattle Skyline Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/IMG_6260.JPG"
-    width="600"
+    height="400"
     alt="Seattle Skyline Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/IMG_7644.JPG"
-    width="600"
+    height="400"
     alt="Miami Beach Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/CalystaLee_SP_SUWorkersUnionRally_03282024_43.JPEG"
-    width="300"
+    height="400"
     alt="Union Rally Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/IMG_1963.JPG"
-    width="600"
+    height="400"
     alt="Washington Monument Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/IMG_7706.jpg"
-    width="600"
+    height="400"
     alt="Tap Dancer Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/CalystaLee_SP_SUWorkersUnionRally_03282024_35.JPEG"
-    width="600"
+    height="400"
     alt="Union Rally Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/BeStillMedia_Miami016.JPG"
-    width="600"
+    height="400"
     alt="Miami Art Museum Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/Sharks_0730_12.jpg"
-    width="300"
+    height="400"
     alt="Baseball Game Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/BeStillMedia_Events_093.JPEG"
-    width="600"
+    height="400"
     alt="Miami Sound Studio Image"
+    class="mobile-image"
     >
     <img src="project_images/documentary/IMG_7648.jpg"
-    width="600"
+    height="400"
     alt="Baseball Game Image"
+    class="mobile-image"
     >
-
+</div>
 <footer>
     <hr>
     &copy; Calysta Lee Photography 2024
