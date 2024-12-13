@@ -40,16 +40,66 @@
             <a class="navclass" href="Contact.html">Contact</a>
         </nav>
     </header>
-    
 
 <h1 class="headerfont">Welcome</h1>
 <div class="intro-box">
 <p class="intro">
-    My name is Calysta Lee, and I am a student photographer based in Washington, D.C. and Syracuse, New York. I am currently continuing my studies of visual communications at The S.I. Newhouse School of Public Communications at Syracuse University in hopes of taking my storytelling to the next level. I have 5 years of photography experience, ranging from sports coverage, portrait sessions, and journalistic documentary. I have recently began a focus of cinematography in my studies, where I am learning how to effectively tell stories through video and multimedia. 
+    My name is Calysta Lee, and I am a student photographer based in Washington, D.C. and Syracuse, New York. I am currently continuing my studies of visual communications at The S.I. Newhouse School of Public Communications at Syracuse University in hopes of taking my visual storytelling to the next level. I have 5 years of photography experience, ranging from sports coverage, portrait sessions, and journalistic documentary. I have recently began a focus of cinematography in my studies, where I am learning how to effectively tell stories through video and multimedia. 
 </p>
 <img class="me"src="project_images/me.jpg" alt="Calysta Lee image"  width="300">
 </div>
 <img class="me-for-mobile"src="project_images/me.jpg" alt="Calysta Lee image"  width="300">
+
+
+
+<div class="carousel-container">
+    <button class="prev" onclick="moveCarousel(-1)">&#10094;</button> 
+    <div class="carousel">
+        <img src="project_images/documentary/IMG_6135.JPG" height="200" alt="Skyline image of Seattle" class="carousel-image">
+        <img src="project_images/Fashion/DO_JamiPortraits_06.jpg" height="200" alt="Fashion portrait of Jami" class="carousel-image">
+        <img src="project_images/Sports/IMG_7707.JPG" height="200" alt="St Stephens and St Agnes High School lacrosse image" class="carousel-image">
+        <img src="project_images/Portraits/Cornell_Grad_Portraits24_078-63.jpg" height="200" alt="Cornell graduates posting in windows image" class="carousel-image">
+        <img src="project_images/workshop/Lee_IlluminatingtheSelf_01.JPG" height="200" alt="Girl putting on makeup at her desk image" class="carousel-image">
+        <img src="project_images/documentary/Miami.jpg" height="200" alt="Street artist in Miami image" class="carousel-image">
+        <img src="project_images/Sports/IMG_7702.JPG" height="200" alt="Syracuse University Women's Lacrosse image" class="carousel-image">
+        <img src="project_images/Portraits/CaraMcAreePortraits_195.JPEG" height="200" alt="Two girls in a field image" class="carousel-image">
+        <img src="project_images/Fashion/FADS04-28_CalystaLee_29.JPG" height="200" alt="Fashion show runway image" class="carousel-image">
+        <img src="project_images/documentary/IMG_7644.JPG" height="200" alt="Image of friends at the beach in Miami" class="carousel-image">
+        <img src="project_images/documentary/IMG_6135.JPG" height="200" alt="Skyline image of Seattle" class="carousel-image">
+        <img src="project_images/Fashion/DO_JamiPortraits_06.jpg" height="200" alt="Fashion portrait of Jami" class="carousel-image">
+        <img src="project_images/Sports/IMG_7707.JPG" height="200" alt="St Stephens and St Agnes High School lacrosse image" class="carousel-image">
+        <img src="project_images/Portraits/Cornell_Grad_Portraits24_078-63.jpg" height="200" alt="Cornell graduates posting in windows image" class="carousel-image">
+        <img src="project_images/workshop/Lee_IlluminatingtheSelf_01.JPG" height="200" alt="Girl putting on makeup at her desk image" class="carousel-image">
+        <img src="project_images/documentary/Miami.jpg" height="200" alt="Street artist in Miami image" class="carousel-image">
+        <img src="project_images/Sports/IMG_7702.JPG" height="200" alt="Syracuse University Women's Lacrosse image" class="carousel-image">
+        <img src="project_images/Portraits/CaraMcAreePortraits_195.JPEG" height="200" alt="Two girls in a field image" class="carousel-image">
+        <img src="project_images/Fashion/FADS04-28_CalystaLee_29.JPG" height="200" alt="Fashion show runway image" class="carousel-image">
+        <img src="project_images/documentary/IMG_7644.JPG" height="200" alt="Image of friends at the beach in Miami" class="carousel-image">
+    </div>
+    <button class="next" onclick="moveCarousel(1)">&#10095;</button> 
+</div>
+
+<script>
+let currentIndex = 0;  
+const images = document.querySelectorAll('.carousel-image');
+const totalImages = images.length;
+
+const imageWidth = images[0].offsetWidth + 50;  
+
+function moveCarousel(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = totalImages - 1;  
+    } else if (currentIndex >= totalImages) {
+        currentIndex = 0;  
+    }
+
+    const carousel = document.querySelector('.carousel');
+    carousel.scrollLeft = currentIndex * imageWidth;  
+}
+
+</script>
 
 <footer>
     <hr>

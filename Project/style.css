@@ -130,10 +130,6 @@ form input, form select, form textarea {
 }
 }
 /* HOME */
-.evenrow {background-color:rgb(222, 233, 255);}
-table, th, td {border: 1px solid black;}
-caption {font-size: 1.5em;}
-
 .me {
     float: left;
 }
@@ -174,9 +170,52 @@ caption {font-size: 1.5em;}
         margin: auto;
         border: none;
     }
-    
-   
 }
+.carousel-container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    overflow-x: auto;  
+}
+
+.carousel-image {
+    margin: 3px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .carousel-container {
+        margin-top: 10px;
+    }
+}
+
 /* PORTFOLIO */
 .portfolio-container {
     display: flex;
