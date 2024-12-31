@@ -186,6 +186,12 @@ form input, form select, form textarea {
         border: none;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .carousel-container {
+        display: none;
+    }
+}
 .carousel-container {
     width: 90%;
     margin: auto;
@@ -307,5 +313,8 @@ button {
         height: 250px;
         width: auto;
 
+    }
+    .youtube {
+       width: 336px;
     }
 }
